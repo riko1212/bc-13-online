@@ -5,37 +5,62 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Barbershop&#128514;</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
-        <header>
-            <nav>
-                <a href=""><img src="./img/logo.svg" alt="лого сайта" /></a>
-                <ul>
-                    <li><a href="">О нас</a></li>
-                    <li><a href="">Услуги и цены</a></li>
-                    <li><a href="">Мастера</a></li>
-                    <li><a href="">Контакты</a></li>
+        <header class="header">
+            <nav class="header-nav">
+                <a href="" class="header-logo"
+                    ><img src="./img/logo.svg" alt="лого сайта"
+                /></a>
+                <ul class="header-list list">
+                    <li class="header-item">
+                        <a href="" class="header-link link">О нас</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-link link">Услуги и цены</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-link link">Мастера</a>
+                    </li>
+                    <li class="header-item">
+                        <a href="" class="header-link link">Контакты</a>
+                    </li>
                 </ul>
             </nav>
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
-            <button type="button">онлайн-запись</button>
+            <a href="tel:+380441111111" class="header-tel link"
+                >+38 044 111 11 11</a
+            >
+            <button type="button" class="header-btn btn">онлайн-запись</button>
         </header>
         <main>
-            <section>
-                <ul>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Youtube</a></li>
+            <section class="hero">
+                <ul class="hero-list list">
+                    <li class="hero-item">
+                        <a href="" class="hero-link link">Instagram</a>
+                    </li>
+                    <li class="hero-item">
+                        <a href="" class="hero-link link">Youtube</a>
+                    </li>
                 </ul>
-                <p lang="en">A hair salon for men in Kyiv</p>
-                <h1 lang="en">BarberShop</h1>
-                <p>
+                <p lang="en" class="hero-pre-title pre-title">
+                    A hair salon for men in Kyiv
+                </p>
+                <h1 lang="en" class="hero-title">BarberShop</h1>
+                <p class="hero-after-title after-title">
                     Мы эксперты в модных мужских стрижках. Работаем быстро,
                     осторожно и со вкусом.
                 </p>
             </section>
-            <section>
-                <ul>
-                    <li>
+            <section class="about">
+                <ul class="about-list list">
+                    <li class="about-item">
                         <img
                             src="./img/about-img.jpg"
                             alt="барбер бреет бороду"
@@ -44,7 +69,7 @@
                         />
                     </li>
 
-                    <li>
+                    <li class="about-item">
                         <img
                             src="./img/about-img2.jpg"
                             alt="барбер делает кантик"
@@ -53,13 +78,15 @@
                         />
                     </li>
                 </ul>
-                <p>О НАС</p>
-                <h2>Лучший Барбершоп твоего города</h2>
-                <p>
+                <p class="about-pre-title pre-title">О НАС</p>
+                <h2 class="about-title title">
+                    Лучший Барбершоп твоего города
+                </h2>
+                <p class="about-after-title after-title">
                     Если ты хочешь добавить в свой образ больше уверенности –
                     тебе точно к нам.
                 </p>
-                <p>
+                <p class="about-text">
                     Мы команда, которая никогда не останавливается на
                     достигнутом и жаждет перемен. И когда ты попадешь в руки
                     нашего мастера, то уже никогда не сможешь быть прежним. Мы
@@ -67,7 +94,9 @@
                     Поэтому, мы всегда готовы усовершенствовать каждого, кто к
                     нам приходит!
                 </p>
-                <button type="button">онлайн-запись</button>
+                <button type="button" class="about-btn btn">
+                    онлайн-запись
+                </button>
             </section>
             <section>
                 <p>Проведи время в компании лучших мастеров</p>

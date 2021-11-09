@@ -1,0 +1,149 @@
+:root {
+    --header-color: #ffffff;
+    --first-title-color: #ffffff;
+    --second-title-color: #303030;
+    --first-btn-color: #ffffff;
+    --second-btn-color: #303030;
+    --first-text-color: #303030;
+    --second-text-color: rgba(157, 164, 189, 0.6);
+    --third-text-color: #9da4bd;
+    --fourth-text-color: #555555;
+    --accent-color: #ff6c00;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+/* ------------------COMPONENTS----------------------- */
+
+.pre-title {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.btn {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    letter-spacing: 0.05em;
+}
+
+.after-title {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+/* ------------------HEADER----------------------- */
+
+.header {
+    background-color: gray;
+}
+
+.header-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--header-color);
+}
+
+.header-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--header-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+
+.header-btn {
+    color: var(--first-btn-color);
+}
+
+/* ------------------HERO----------------------- */
+
+.hero {
+    background-color: gray;
+}
+
+.hero-link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.2em;
+    color: var(--first-text-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: var(--accent-color);
+}
+
+.hero-pre-title {
+    color: var(--second-text-color);
+}
+
+.hero-title {
+    color: var(--first-title-color);
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: calc(85 / 72);
+    letter-spacing: 0.05em;
+}
+
+.hero-after-title {
+    color: var(--third-text-color);
+}
+
+/* ------------------ABOUT----------------------- */
+
+.about-pre-title {
+    color: var(--first-text-color);
+}
+
+.about-title {
+    color: var(--second-title-color);
+}
+
+.about-after-title {
+    color: var(--fourth-text-color);
+}
+
+.about-text {
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: var(--fourth-text-color);
+}
+
+.about-btn {
+    color: var(--second-btn-color);
+}
