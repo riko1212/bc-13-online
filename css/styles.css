@@ -11,6 +11,18 @@
     --accent-color: #ff6c00;
 }
 
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -21,6 +33,16 @@ body {
 
 .link {
     text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* margin: 0 auto; */
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid tomato;
 }
 
 /* ------------------COMPONENTS----------------------- */
@@ -60,6 +82,8 @@ body {
 
 .header {
     background-color: gray;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .header-tel {
@@ -125,6 +149,10 @@ body {
 
 /* ------------------ABOUT----------------------- */
 
+.about {
+    padding-top: 139px;
+    padding-bottom: 121px;
+}
 .about-pre-title {
     color: var(--first-text-color);
 }
@@ -146,4 +174,21 @@ body {
 
 .about-btn {
     color: var(--second-btn-color);
+}
+
+.prices {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: gray;
+}
+
+.reasons {
+    padding-top: 120px;
+    padding-bottom: 130px;
+}
+
+.masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: #f7f7f7;
 }
