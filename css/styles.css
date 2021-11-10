@@ -18,36 +18,20 @@ button {
     cursor: pointer;
 }
 
-.text {
+/* .text {
     width: 200px;
     height: 200px;
     border: 10px solid tomato;
     padding: 10px;
-}
+} */
 
-.title {
-    margin-bottom: 70px;
-    background-color: tomato;
-}
-
-.big-text {
-    margin-top: 50px;
-}
-
-.small-text {
-    background-color: teal;
-}
-
-.some-item {
-    margin-top: 30px;
-}
-
-/* .wrap {
+.wrap {
     width: 800px;
     height: 500px;
     margin: 0 auto;
     outline: 1px solid #000;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .block {
@@ -61,19 +45,16 @@ button {
 
 .first {
     background-color: blueviolet;
-    order: 3;
 }
 
 .second {
     background-color: crimson;
-    align-self: center;
 }
 
 .third {
     background-color: darkgreen;
-    order: 2;
 }
 
 .fourth {
     background-color: goldenrod;
-} */
+}
