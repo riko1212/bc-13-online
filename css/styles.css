@@ -11,6 +11,14 @@
     --accent-color: #ff6c00;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 p,
 h1,
 h2,
@@ -56,12 +64,17 @@ body {
 }
 
 .btn {
+    background-color: transparent;
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
+    min-height: 40px;
+    min-width: 160px;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
 }
 
 .title {
@@ -86,12 +99,40 @@ body {
     padding-bottom: 32px;
 }
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: 70px;
+}
+
+.header-item {
+    margin-right: 40px;
+}
+
+.header-item:last-child {
+    margin-right: 0;
+}
+
 .header-tel {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--header-color);
+    margin-right: 40px;
 }
 
 .header-link {
@@ -114,9 +155,23 @@ body {
 /* ------------------HERO----------------------- */
 
 .hero {
-    background-color: gray;
 }
 
+.hero-right {
+    background-color: gray;
+    flex-grow: 1;
+    padding-top: 272px;
+    padding-bottom: 206px;
+    padding-left: 96px;
+}
+
+.hero-container {
+    display: flex;
+}
+
+.hero-list {
+    width: 93px;
+}
 .hero-link {
     font-weight: 600;
     font-size: 11px;
@@ -132,6 +187,7 @@ body {
 
 .hero-pre-title {
     color: var(--second-text-color);
+    margin-bottom: 20px;
 }
 
 .hero-title {
@@ -141,10 +197,12 @@ body {
     font-size: 72px;
     line-height: calc(85 / 72);
     letter-spacing: 0.05em;
+    margin-bottom: 20px;
 }
 
 .hero-after-title {
     color: var(--third-text-color);
+    max-width: 400px;
 }
 
 /* ------------------ABOUT----------------------- */
@@ -153,16 +211,40 @@ body {
     padding-top: 139px;
     padding-bottom: 121px;
 }
+
+.about-list {
+    display: flex;
+    margin-right: 64px;
+}
+
+.about-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+/* .about-item {
+    margin-right: 30px;
+}
+
+.about-item:last-child {
+    margin-right: 0;
+} */
+
+.about-container {
+    display: flex;
+}
 .about-pre-title {
     color: var(--first-text-color);
+    margin-bottom: 20px;
 }
 
 .about-title {
     color: var(--second-title-color);
+    margin-bottom: 20px;
 }
 
 .about-after-title {
     color: var(--fourth-text-color);
+    margin-bottom: 20px;
 }
 
 .about-text {
@@ -170,6 +252,7 @@ body {
     line-height: 1.86;
     letter-spacing: 0.02em;
     color: var(--fourth-text-color);
+    margin-bottom: 40px;
 }
 
 .about-btn {
