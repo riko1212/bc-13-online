@@ -31,6 +31,12 @@ ul {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -43,6 +49,19 @@ body {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -50,7 +69,7 @@ body {
     /* margin: 0 auto; */
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
 }
 
 /* ------------------COMPONENTS----------------------- */
@@ -259,19 +278,207 @@ body {
     color: var(--second-btn-color);
 }
 
+/* ------------------PRICES----------------------- */
+
 .prices {
     padding-top: 130px;
     padding-bottom: 130px;
-    background-color: gray;
+    background-color: rgb(37, 36, 36);
 }
+
+.prices-pre-title {
+    color: var(--second-text-color);
+    margin-bottom: 20px;
+}
+
+.prices-title {
+    color: var(--first-title-color);
+    margin-bottom: 44px;
+}
+
+.prices-wrap {
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.prices-list {
+    border: 1px solid #ffffff;
+    width: 50%;
+    padding: 30px 40px;
+}
+
+.prices-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+    margin-bottom: 0;
+}
+
+.prices-item-text {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--third-text-color);
+}
+
+.prices-btn {
+    color: var(--first-btn-color);
+    margin: 0 auto;
+    display: block;
+}
+
+/* ------------------REASONS----------------------- */
 
 .reasons {
     padding-top: 120px;
     padding-bottom: 130px;
 }
 
+.reasons-left,
+.reasons-right {
+    width: calc(50% - 30px / 2);
+}
+
+.reasons-left {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.reasons-container {
+    display: flex;
+}
+
+.reasons-list {
+    display: flex;
+    width: 370px;
+    flex-wrap: wrap;
+}
+
+.reasons-item {
+    width: 170px;
+    height: 133px;
+    border: 1px solid #000000;
+    padding: 20px 24px;
+}
+
+.reasons-item:nth-child(even) {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.reasons-item-spetial {
+    padding: 20px;
+}
+
+.reasons-count {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.05em;
+    display: block;
+    color: var(--first-text-color);
+    margin-bottom: 6px;
+}
+
+.reasons-item-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--first-text-color);
+}
+
+.reasons-pre-title {
+    color: var(--first-text-color);
+    margin-bottom: 20px;
+}
+
+.reasons-title {
+    color: var(--second-title-color);
+    margin-bottom: 20px;
+}
+
+.reasons-after-title {
+    color: var(--fourth-text-color);
+}
+
+/* ------------------MASTERS----------------------- */
+
 .masters {
     padding-top: 130px;
     padding-bottom: 130px;
     background-color: #f7f7f7;
+}
+
+.masters-pre-title {
+    color: var(--first-text-color);
+    margin-bottom: 20px;
+}
+
+.masters-title {
+    color: var(--second-title-color);
+    margin-bottom: 44px;
+}
+
+.masters-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    margin-bottom: 8px;
+}
+
+.masters-item-text {
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--accent-color);
+}
+
+.masters-item-bottom {
+    padding-top: 30px;
+}
+
+.masters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-right: -30px;
+}
+
+.masters-item {
+    /* width: calc((100% - 3 * 30px) / 3); */
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+/* ------------------GALLERY----------------------- */
+
+.gallery {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+.gallery-pre-title {
+    color: var(--first-text-color);
+    margin-bottom: 44px;
+}
+
+.gallery-list {
+    display: flex;
+    margin-left: -30px;
+}
+
+.gallery-item {
+    width: calc(100% / 3 - 30px);
+    margin-left: 30px;
 }
