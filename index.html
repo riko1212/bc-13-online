@@ -11,13 +11,22 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="stylesheet" href="./css/styles.css" />
     </head>
     <body>
         <header class="header">
             <div class="container header-container">
                 <nav class="header-nav">
-                    <a href="" class="header-logo"
+                    <a
+                        href=""
+                        class="
+                            header-logo
+                            animate__animated animate__rubberBand
+                        "
                         ><img src="./img/logo.svg" alt="лого сайта"
                     /></a>
                     <ul class="header-list list">
@@ -41,7 +50,11 @@
                     <a href="tel:+380441111111" class="header-tel link"
                         >+38 044 111 11 11</a
                     >
-                    <button type="button" class="header-btn btn">
+                    <button
+                        type="button"
+                        class="header-btn btn"
+                        data-modal-open
+                    >
                         онлайн-запись
                     </button>
                 </div>
@@ -50,14 +63,16 @@
         <main>
             <section class="hero">
                 <div class="container hero-container">
-                    <ul class="hero-list list">
-                        <li class="hero-item">
-                            <a href="" class="hero-link link">Instagram</a>
-                        </li>
-                        <li class="hero-item">
-                            <a href="" class="hero-link link">Youtube</a>
-                        </li>
-                    </ul>
+                    <div class="hero-left">
+                        <ul class="hero-list list">
+                            <li class="hero-item">
+                                <a href="" class="hero-link link">Instagram</a>
+                            </li>
+                            <li class="hero-item">
+                                <a href="" class="hero-link link">Youtube</a>
+                            </li>
+                        </ul>
+                    </div>
                     <div class="hero-right">
                         <p lang="en" class="hero-pre-title pre-title">
                             A hair salon for men in Kyiv
@@ -264,12 +279,22 @@
 
                     <ul class="masters-list list">
                         <li class="masters-item">
-                            <img
-                                src="./img/masters-img-1.jpg"
-                                alt="барбер стрижет клиентm"
-                                width="370"
-                                height="346"
-                            />
+                            <div class="masters-top-wrap">
+                                <img
+                                    src="./img/masters-img-1.jpg"
+                                    alt="барбер стрижет клиентm"
+                                    width="370"
+                                    height="346"
+                                />
+                                <!-- <p class="masters-top-text">
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Est ut consequuntur
+                                    expedita, accusamus ex fugiat dolores,
+                                    similique quisquam eos rem optio aliquam
+                                    itaque! Qui quae earum, nostrum nobis rem
+                                    iste?
+                                </p> -->
+                            </div>
                             <div class="masters-item-bottom">
                                 <h3 lang="en" class="masters-item-title">
                                     John Smith
@@ -548,5 +573,13 @@
                 <li><a href="">Youtube</a></li>
             </ul>
         </footer>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="close-btn" data-modal-close>
+                    X
+                </button>
+            </div>
+        </div>
+        <script src="./js/modal.js"></script>
     </body>
 </html>

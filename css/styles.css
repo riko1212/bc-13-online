@@ -103,6 +103,8 @@ body {
     min-width: 160px;
     border: 1px solid #ff6c00;
     border-radius: 25px;
+    cursor: pointer;
+    transition: color 300ms linear, background-color 300ms linear;
 }
 
 .btn:hover,
@@ -128,9 +130,11 @@ body {
 /* ------------------HEADER----------------------- */
 
 .header {
-    background-color: gray;
     padding-top: 32px;
     padding-bottom: 32px;
+    position: absolute;
+    width: 100%;
+    left: 0;
 }
 
 .header-container {
@@ -175,6 +179,7 @@ body {
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--header-color);
+    transition: color 300ms linear;
 }
 
 .header-link:hover,
@@ -211,8 +216,31 @@ body {
     display: flex;
 }
 
-.hero-list {
+.hero-left {
     width: 93px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 23px;
+    padding-bottom: 18px;
+}
+
+.hero-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+.hero-list {
+    display: flex;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    align-items: center;
+}
+
+.hero-list::before {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background-color: #303030;
+    margin-right: 40px;
 }
 .hero-link {
     font-weight: 600;
@@ -220,6 +248,7 @@ body {
     line-height: 1.36;
     letter-spacing: 0.2em;
     color: var(--first-text-color);
+    transition: color 300ms linear;
 }
 
 .hero-link:hover,
@@ -445,9 +474,19 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.05em;
-    display: block;
     color: var(--first-text-color);
     margin-bottom: 6px;
+    display: flex;
+    justify-content: center;
+}
+
+.reasons-count::after {
+    content: "+";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    text-align: center;
+    color: var(--accent-color);
 }
 
 .reasons-item-text {
@@ -535,6 +574,10 @@ body {
     margin-bottom: 30px;
 }
 
+.masters-item:hover .masters-top-wrap::before {
+    top: 0;
+}
+
 .masters-socials-list {
     display: flex;
     justify-content: center;
@@ -578,6 +621,40 @@ body {
     fill: #000000;
 } */
 
+.masters-top-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.masters-top-wrap::before {
+    content: "regreswgrewgewrg";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(255, 68, 0, 0.644);
+    padding: 30px;
+    line-height: 1.5;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    box-sizing: border-box;
+    transition: top 300ms linear;
+}
+
+.masters-top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(255, 68, 0, 0.644);
+    padding: 30px;
+    line-height: 1.5;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+}
+
 /* ------------------GALLERY----------------------- */
 
 .gallery {
@@ -620,4 +697,38 @@ body {
 
 .contact-title {
     background-color: var(--first-title-color);
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(157, 164, 189, 0.6);
+    position: fixed;
+    top: 0;
+}
+
+.modal {
+    position: absolute;
+    width: 500px;
+    min-height: 600px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
