@@ -716,6 +716,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
 }
 
 .close-btn {
@@ -732,3 +733,134 @@ body {
     opacity: 0;
     pointer-events: none;
 }
+
+.modal-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    color: var(--second-title-color);
+    margin-bottom: 20px;
+}
+
+.modal-field {
+    margin-bottom: 10px;
+}
+
+.modal-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.2;
+    color: var(--fourth-text-color);
+}
+
+.modal-input {
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border: 1px solid #999999;
+    border-radius: 5px;
+
+    padding-left: 30px;
+    outline: none;
+}
+
+.modal-input:focus {
+    border-color: var(--accent-color);
+}
+
+.modal-input:focus + .modal-input-icon {
+    fill: var(--accent-color);
+}
+
+.modal-text {
+    width: 100%;
+    height: 100px;
+    background-color: transparent;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    
+    resize: none;
+    padding: 10px 20px;
+}
+
+.modal-input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8px;
+}
+
+.input-wrap {
+    display: block;
+    position: relative;
+}
+
+.check-text{
+    font-size: 14px;
+    line-height: 1.2;
+    color: var(--third-text-color);
+    display: flex;
+    position: relative;
+}
+
+
+
+.check-link {
+    color: var(--accent-color);
+}
+
+.check-text span {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-icon-check {
+    fill: #ffffff;
+}
+
+/* .input-check:checked + .check-text span{
+    background-color: var(--accent-color);
+    border: none;
+}  */
+
+
+/* .check-text::before {
+    content: '';
+    width: 40px;
+    height: 22px;
+    border: 1px solid #999999;
+    border-radius: 50px;
+    transition: background-color 300ms linear;
+
+}
+
+.check-text::after {
+    content: '';
+    top: 3px;
+    left: 3px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #999999;
+    border-radius: 50%;
+    transition: transform 300ms linear, background-color 300ms linear;
+}
+
+.input-check:checked + .check-text::after {
+    transform: translate(18px);
+    background-color: #ffffff;
+}
+
+.input-check:checked + .check-text::before {
+    background-color: rgb(90, 200, 127);
+} */
+
+
