@@ -1,0 +1,147 @@
+.masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background-color: #f7f7f7;
+}
+
+.masters-pre-title {
+    color: var(--first-text-color);
+    margin-bottom: 20px;
+}
+
+.masters-pre-title::before {
+    background-color: var(--first-text-color);
+}
+
+.masters-title {
+    color: var(--second-title-color);
+    margin-bottom: 44px;
+}
+
+.masters-item-title {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--second-title-color);
+    margin-bottom: 8px;
+}
+
+.masters-item-text {
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 30px;
+    color: var(--accent-color);
+}
+
+.masters-item-bottom {
+    padding-top: 30px;
+}
+
+.masters-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -30px;
+    margin-right: -30px;
+}
+
+.masters-item {
+    /* width: calc((100% - 3 * 30px) / 3); */
+    flex-basis: calc(100% / 3 - 30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.masters-item:hover .masters-top-wrap::before {
+    top: 0;
+}
+
+.masters-socials-list {
+    display: flex;
+    justify-content: center;
+}
+
+.masters-socials-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+
+.masters-socials-item:last-child {
+    margin-right: 0;
+}
+
+.masters-socials-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+       
+}
+
+.masters-socials-icon {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+    .masters-socials-link:hover &,
+    .masters-socials-link:focus &{
+            fill: #000000;
+        }
+}
+
+.masters-socials-link:hover,
+.masters-socials-link:focus {
+    background-color: tomato;
+    color: black;
+}
+
+.masters-socials-link :hover .masters-socials-icon,
+.masters-socials-link:focus .masters-socials-icon {
+    fill: #000000;
+} 
+
+
+
+
+
+.masters-top-wrap {
+    position: relative;
+    overflow: hidden;
+    &::before {
+    content: "regreswgrewgewrg";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(255, 68, 0, 0.644);
+    padding: 30px;
+    line-height: 1.5;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+    box-sizing: border-box;
+    transition: top 300ms linear;
+}
+}
+
+
+
+.masters-top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ffffff;
+    background-color: rgba(255, 68, 0, 0.644);
+    padding: 30px;
+    line-height: 1.5;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 300ms linear;
+}
