@@ -11,11 +11,12 @@
 .prices-pre-title {
     color: var(--second-text-color);
     margin-bottom: 20px;
+    &::before {
+        background-color: var(--second-text-color);
+    }
 }
 
-.prices-pre-title::before {
-    background-color: var(--second-text-color);
-}
+
 
 .prices-title {
     color: var(--first-title-color);
@@ -45,20 +46,22 @@
     justify-content: space-between;
     margin-bottom: 20px;
     align-items: baseline;
+    &::before {
+        content: "";
+        flex-grow: 1;
+        height: 1px;
+        margin-left: 6px;
+        margin-right: 6px;
+        background-color: rgba(157, 164, 189, 0.12);
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
-.prices-item::before {
-    content: "";
-    flex-grow: 1;
-    height: 1px;
-    margin-left: 6px;
-    margin-right: 6px;
-    background-color: rgba(157, 164, 189, 0.12);
-}
 
-.prices-item:last-child {
-    margin-bottom: 0;
-}
+
+
 
 .prices-item-text {
     font-size: 18px;
