@@ -1,37 +1,83 @@
 .reasons {
-    padding-top: 120px;
-    padding-bottom: 130px;
+    // padding-top: 120px;
+    // padding-bottom: 130px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 120px;
+        padding-bottom: 130px;
+    }
 }
 
 .reasons-left,
 .reasons-right {
-    width: calc(50% - 30px / 2);
+    @media screen and (min-width: 1200px) {
+width: calc(50% - 30px / 2);
+    }
+    
 }
 
+.reasons-right {
+      @media screen and (min-width: 768px) {
+        max-width: 500px;
+      }
+    
+} 
+
 .reasons-left {
-    margin-right: 30px;
+    // margin-right: 30px;
     display: flex;
-    justify-content: center;
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
+
+    @media screen and (min-width: 1200px) {
+        justify-content: center;
+        margin-right: 30px;
+    }
 }
 
 .reasons-container {
     display: flex;
+    flex-direction: column-reverse;
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+    }
 }
 
 .reasons-list {
     display: flex;
-    width: 370px;
+    // width: 370px;
     flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
 }
 
 .reasons-item {
-    width: 170px;
+    // width: 170px;
+    width: 44%;
     height: 133px;
-    border: 1px solid #000000;
+    background-color: #F7F7F7;
     padding: 20px 24px;
+    @media screen and (min-width: 480px) {
+        width: 194px;
+    }
+    @media screen and (min-width: 768px) {
+        width: 210px;
+        padding: 20px 44px;
+    }
     &:nth-child(even) {
         margin-top: 30px;
         margin-left: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 170px;
+        padding: 20px 24px;
     }
 }
 
@@ -39,6 +85,13 @@
 
 .reasons-item-spetial {
     padding: 20px;
+    @media screen and (min-width: 768px) {
+        padding: 20px 40px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 20px;
+    }
 }
 
 .reasons-count {
@@ -88,4 +141,5 @@
 
 .reasons-after-title {
     color: var(--fourth-text-color);
+    margin-bottom: 44px;
 }
