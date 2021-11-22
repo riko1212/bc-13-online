@@ -13,7 +13,7 @@
 }
 
 .header-list {
-    display: flex;
+    display: none;
 }
 
 .header-nav {
@@ -23,6 +23,7 @@
 
 .header-logo {
     margin-right: 70px;
+    background-color: #ffffff;
 }
 
 .header-item {
@@ -57,4 +58,68 @@
 
 .header-btn {
     color: var(--first-btn-color);
+}
+
+.header-connect {
+    display: none;
+}
+
+.menu-open {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    padding: 48px 30px 40px;
+}
+
+.menu-close {
+    display: block;
+    margin-left: auto;
+    background-color: transparent;
+    border: none;
+}
+
+.mob-menu-item {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.mob-menu-link, .mob-menu-tel {
+font-weight: 600;
+font-size: 18px;
+line-height: 25px;
+letter-spacing: 0.1em;
+
+color: #303030;
+}
+
+.mob-social-link {
+    font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+/* identical to box height */
+
+letter-spacing: 0.2em;
+
+color: #303030;
+
+}
+
+.mob-menu-tel {
+    display: block;
+    margin-bottom: 24px;
+}
+
+.mob-menu-btn {
+    color: #303030;
+    margin-bottom: 64px;
 }

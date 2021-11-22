@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="./css/main.min.css" />
     </head>
     <body>
-        <!-- <header class="header">
+        <header class="header">
             <div class="container header-container">
                 <nav class="header-nav">
                     <a
@@ -58,8 +58,48 @@
                         онлайн-запись
                     </button>
                 </div>
+                <button type="button" class="menu-open">O</button>
             </div>
-        </header> -->
+            <div class="mob-menu is-hidden">
+                <div class="menu-top">
+                    <button type="button" class="menu-close">X</button>
+                    <ul class="mob-menu-list list">
+                        <li class="mob-menu-item">
+                            <a href="" class="mob-menu-link link">О нас</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="" class="mob-menu-link link"
+                                >Услуги и цены</a
+                            >
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="" class="mob-menu-link link">Мастера</a>
+                        </li>
+                        <li class="mob-menu-item">
+                            <a href="" class="mob-menu-link link">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-bottom">
+                    <a href="" class="mob-menu-tel link">+38 044 111 11 11</a>
+                    <button type="button" class="btn mob-menu-btn">
+                        онлайн-запись
+                    </button>
+                    <ul class="mob-social-list list">
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link link"
+                                >Instagram</a
+                            >
+                        </li>
+                        <li class="mob-social-item">
+                            <a href="" class="mob-social-link link"
+                                >Instagram</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
         <main>
             <section class="hero">
                 <div class="container hero-container">
@@ -89,21 +129,57 @@
                 <div class="container about-container">
                     <ul class="about-list list">
                         <li class="about-item">
-                            <img
-                                src="./img/about-img.jpg"
-                                alt="барбер бреет бороду"
-                                width="270"
-                                height="445"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./img/about-img.jpg    1x,
+                                        ./img/about-img-2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./img/about-img-tab-1x.jpg 1x,
+                                        ./img/about-img-tab-2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <img
+                                    src="./img/about-img.jpg"
+                                    alt="барбер бреет бороду"
+                                    width=""
+                                />
+                            </picture>
                         </li>
 
                         <li class="about-item">
-                            <img
-                                src="./img/about-img2.jpg"
-                                alt="барбер делает кантик"
-                                width="270"
-                                height="445"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./img/about-img2.jpg    1x,
+                                        ./img/about-img2-2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./img/about-img2-tab-1x.jpg 1x,
+                                        ./img/about-img2-tab-2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./img/about-img2-tab-1x.jpg 1x,
+                                        ./img/about-img2-tab-2x.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="./img/about-img2.jpg"
+                                    alt="барбер делает кантик"
+                                />
+                            </picture>
                         </li>
                     </ul>
                     <div class="about-right">
@@ -500,12 +576,35 @@
                     </p>
                     <ul class="gallery-list list">
                         <li class="gallery-list__item">
-                            <img
-                                src="./img/gallery-img1.jpg"
-                                alt="барбер стрижет клиента"
-                                width="270"
-                                height="360"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./img/gallery-img1.jpg    1x,
+                                        ./img/gallery-img1-2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./img/gallery-img1-tab-1x.jpg 1x,
+                                        ./img/gallery-img1-tab-2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./img/gallery-img1-mob-1x.jpg 1x,
+                                        ./img/gallery-img1-mob-2x.jpg 2x
+                                    "
+                                    media="(min-width: 320px)"
+                                />
+                                <img
+                                    src="./img/gallery-img1.jpg"
+                                    alt="барбер стрижет клиента"
+                                    width="270"
+                                    height="360"
+                                />
+                            </picture>
                         </li>
                         <li class="gallery-list__item">
                             <img
@@ -666,5 +765,6 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>
